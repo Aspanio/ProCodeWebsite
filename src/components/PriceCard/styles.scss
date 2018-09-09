@@ -1,0 +1,49 @@
+
+.priceCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 5px 15px 0px rgba(49, 55, 68, 0.05);
+    border: 1px solid #ededed;
+    padding: 30px;
+    h1, h2, h4, ul, li, hr{
+        margin: 0;
+        padding: 0;
+    }
+    hr {
+        color: #fefefe;
+        width: 100%;
+        margin: 15px 3px;
+    }
+    h1 {
+        font-size: 48px;
+        font-weight: 1000;
+    }
+    sup {
+        font-size: 28px;
+        text-transform: none;
+        font-weight: normal;
+    }
+    h2 {
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 38px;
+        margin-bottom: 10px;
+    }
+    h4 {
+        margin-bottom: 20px;
+    }
+    li {
+        /* list-style-image: url(check-mark.png); */
+        padding: 7px 0;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .priceCard {
+        h1,h2, h4{
+            line-height: 0px;
+        }
+    }
+}

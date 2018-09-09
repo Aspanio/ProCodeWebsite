@@ -1,0 +1,34 @@
+.placeBg {
+    background-color: #f9fafc;
+    .placeContainer {
+        padding: 50px 20px;
+        max-width: 1190px;
+        margin: 0 auto;
+        h1 {
+            color: black;
+            margin-top: 0;
+            font-weight: 900;
+            font-size: 35px;
+            text-transform: uppercase;
+        }
+        .placesGallery{
+            display: flex;
+            justify-content: space-between;
+            margin: 30px 0;
+        }
+        .placeHeader {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 30px 0;
+            span {
+                color: #fdd232;
+                font-size: 40px;
+                font-weight: bold;
+            }
+            .placeSpan {
+                font-size: 36px;
+            }
+        }
+    }
+}

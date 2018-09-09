@@ -1,0 +1,23 @@
+.compBg {
+    background-color: #fff;
+    .compContainer {
+        max-width: 1190px;
+        margin: 0 auto;
+        padding: 50px 20px;
+        h1 {
+            text-transform: uppercase;
+            margin-top: 0;
+            font-size: 35px;
+            font-weight: 900;
+            color: #000;
+        }
+        .companies {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            img {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
