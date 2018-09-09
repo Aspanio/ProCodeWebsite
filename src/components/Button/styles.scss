@@ -1,6 +1,7 @@
+@import '../../variables';
 .button {
     width: 278px;
-    background-color: #fdd232;
+    background-color: $yellow;
     color: black;
     text-transform: capitalize;
     height: 52px;

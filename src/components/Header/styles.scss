@@ -1,3 +1,4 @@
+@import '../../variables';
 .headerBg {
     background-image: url('./imgs/bg.png');
     background-size: cover;
@@ -25,5 +26,5 @@
     }
 }
 span{
-    color: #fdd232;
+    color: $yellow;
 }

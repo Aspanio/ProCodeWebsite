@@ -5,16 +5,16 @@ import styles from './styles.scss';
 import Button from '../Button';
 
 
-import comp1 from './imgs/ciklum.png';
-import comp2 from './imgs/DataArt.png';
-import comp3 from './imgs/epam.png';
-import comp4 from './imgs/GlobalLogic.png';
-import comp5 from './imgs/infopulse.png';
-import comp6 from './imgs/nettracker.png';
-import comp7 from './imgs/nix.png';
-import comp8 from './imgs/sigma.png';
-import comp9 from './imgs/softserve.png';
-import comp10 from './imgs/vipDesign.png';
+import company1 from './imgs/ciklum.png';
+import company2 from './imgs/dataArt.png';
+import company3 from './imgs/epam.png';
+import company4 from './imgs/globalLogic.png';
+import company5 from './imgs/infopulse.png';
+import company6 from './imgs/nettracker.png';
+import company7 from './imgs/nix.png';
+import company8 from './imgs/sigma.png';
+import company9 from './imgs/softserve.png';
+import company10 from './imgs/vipDesign.png';
 
 class Companies extends Component {
   constructor(props) {
@@ -43,16 +43,16 @@ Companies.propTypes = {
 
 Companies.defaultProps = {
   companies: [
-    comp1,
-    comp2,
-    comp3,
-    comp4,
-    comp5,
-    comp6,
-    comp7,
-    comp8,
-    comp9,
-    comp10,
+    company1,
+    company2,
+    company3,
+    company4,
+    company5,
+    company6,
+    company7,
+    company8,
+    company9,
+    company10,
   ],
 };
 

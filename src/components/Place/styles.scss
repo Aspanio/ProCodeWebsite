@@ -1,5 +1,6 @@
+@import '../../variables';
 .placeBg {
-    background-color: #f9fafc;
+    background-color: $bgc;
     .placeContainer {
         padding: 50px 20px;
         max-width: 1190px;
@@ -8,7 +9,7 @@
             color: black;
             margin-top: 0;
             font-weight: 900;
-            font-size: 35px;
+            font-size: $hfontsize;
             text-transform: uppercase;
         }
         .placesGallery{
@@ -22,12 +23,12 @@
             justify-content: space-between;
             margin: 30px 0;
             span {
-                color: #fdd232;
+                color: $yellow;
                 font-size: 40px;
                 font-weight: bold;
             }
             .placeSpan {
-                font-size: 36px;
+                font-size: $hfontsize;
             }
         }
     }

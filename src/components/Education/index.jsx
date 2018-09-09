@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import uuidv4 from 'uuid/v4';
 import styles from './styles.scss';
 import Button from '../Button';
 
@@ -11,12 +10,12 @@ class Education extends Component {
   }
 
   render() {
-    const { obj } = this.props;
-    const a = obj.map((item) => {
+    const { rawPlan } = this.props;
+    const plan = rawPlan.map((item) => {
       const arr = item.items;
-      const liEl = arr.map(el => <li key={uuidv4()}>{el}</li>);
+      const liEl = arr.map(el => <li key={el}>{el}</li>);
       return (
-        <div key={uuidv4()}>
+        <div key={item}>
           <h3>{item.header}</h3>
           <ul className={styles.edUl}>
             {liEl}
@@ -36,7 +35,7 @@ class Education extends Component {
               </div>
             </div>
             <div className={styles.rightBar}>
-              {a}
+              {plan}
             </div>
           </div>
           <Button />
@@ -47,7 +46,7 @@ class Education extends Component {
 }
 
 Education.propTypes = {
-  obj: PropTypes.objectOf(PropTypes.string).isRequired,
+  rawPlan: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)).isRequired,
 };
 
 export default Education;

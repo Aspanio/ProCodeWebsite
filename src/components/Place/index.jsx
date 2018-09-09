@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import uuidv4 from 'uuid/v4';
 import styles from './styles.scss';
 import Button from '../Button';
 
@@ -18,7 +17,7 @@ class Place extends Component {
     const { placeImgs } = this.props;
     const { desc } = this.props;
     const { square } = this.props;
-    const item = placeImgs.map(el => <img key={uuidv4()} src={el} alt="" />);
+    const item = placeImgs.map(el => <img key={el} src={el} alt="" />);
     return (
       <div className={styles.placeBg}>
         <div className={styles.placeContainer}>

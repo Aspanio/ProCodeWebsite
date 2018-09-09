@@ -73,7 +73,7 @@ const Container = () => (
     <Header />
     <Features />
     <Secrets />
-    <Education obj={educationPlan} />
+    <Education rawPlan={educationPlan} />
     <PostForm />
     <PriceBoard />
     <SpecialOffer />

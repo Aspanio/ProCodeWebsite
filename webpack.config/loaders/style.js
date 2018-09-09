@@ -12,12 +12,12 @@ module.exports = isDev => ({
         sourceMap: isDev,
       },
     },
-    {
-      loader: 'postcss-loader', // Минификация, автопрефиксы, его настрйоки в postcss.config.js
-      options: {
-        sourceMap: isDev,
-      },
-    },
+    // {
+    //   loader: 'postcss-loader', // Минификация, автопрефиксы, его настрйоки в postcss.config.js
+    //   options: {
+    //     sourceMap: isDev,
+    //   },
+    // },
     {
       loader: 'sass-loader', // Очевидно, sass/scss лоадер
       options: {

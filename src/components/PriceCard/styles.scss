@@ -1,4 +1,4 @@
-
+@import '../../variables';
 .priceCard {
     display: flex;
     justify-content: center;
@@ -7,7 +7,8 @@
     box-shadow: 0px 5px 15px 0px rgba(49, 55, 68, 0.05);
     border: 1px solid #ededed;
     padding: 30px;
-    h1, h2, h4, ul, li, hr{
+    h1, h2, h4, hr{
+        line-height: 0;
         margin: 0;
         padding: 0;
     }
@@ -17,7 +18,7 @@
         margin: 15px 3px;
     }
     h1 {
-        font-size: 48px;
+        font-size: $hfontsize;
         font-weight: 1000;
     }
     sup {
@@ -28,22 +29,13 @@
     h2 {
         text-transform: uppercase;
         font-weight: 900;
-        font-size: 38px;
+        font-size: $hfontsize;
         margin-bottom: 10px;
     }
     h4 {
         margin-bottom: 20px;
     }
     li {
-        /* list-style-image: url(check-mark.png); */
         padding: 7px 0;
-    }
-}
-
-@media screen and (max-width: 992px) {
-    .priceCard {
-        h1,h2, h4{
-            line-height: 0px;
-        }
     }
 }

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import uuidv4 from 'uuid/v4';
 import PropTypes from 'prop-types';
 import styles from './styles.scss';
 import Button from '../Button';
@@ -14,7 +13,7 @@ class PriceCard extends Component {
     const { items } = this.props;
     const { price } = this.props;
     const { course } = this.props;
-    const item = items.map(elem => <li key={uuidv4()}>{elem}</li>);
+    const item = items.map(elem => <li key={elem}>{elem}</li>);
     return (
       <div className={styles.priceCard}>
         <h2><sup>Курс</sup><span>{course}</span></h2>

@@ -1,5 +1,6 @@
+@import '../../variables';
 .priceBoardBg {
-    background-color: #f9fafc;
+    background-color: $bgc;
     font-family: sans-serif;
     padding-bottom: 70px;
     .priceBoardContainer {
@@ -8,7 +9,7 @@
         margin: 0 auto;
         h1 {
             margin: 0;
-            font-size: 35px;
+            font-size: $hfontsize;
             padding: 50px 0;
             color: black;
             text-transform: uppercase;
