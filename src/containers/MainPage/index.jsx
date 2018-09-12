@@ -1,15 +1,16 @@
 import React from 'react';
+//import 'normalize.css';
 
-import Header from '../components/Header';
-import Topbar from '../components/Topbar';
-import Features from '../components/Features';
-import Secrets from '../components/Secrets';
-import PostForm from '../components/PostForm';
-import PriceBoard from '../components/PriceBoard';
-import Place from '../components/Place';
-import Companies from '../components/Companies';
-import SpecialOffer from '../components/SpecialOffer';
-import Education from '../components/Education';
+import Header from '../../components/Header';
+import Topbar from '../../components/Topbar';
+import Features from '../../components/Features';
+import Secrets from '../../components/Secrets';
+import PostForm from '../../components/PostForm';
+import PriceBoard from '../../components/PriceBoard';
+import Place from '../../components/Place';
+import Companies from '../../components/Companies';
+import SpecialOffer from '../../components/SpecialOffer';
+import Education from '../../components/Education';
 
 const educationPlan = [
   {
@@ -67,7 +68,7 @@ const educationPlan = [
   },
 ];
 
-const Container = () => (
+const MainPage = () => (
   <div>
     <Topbar />
     <Header />
@@ -84,4 +85,4 @@ const Container = () => (
 );
 
 
-export default Container;
+export default MainPage;

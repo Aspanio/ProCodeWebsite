@@ -5,7 +5,7 @@ import Button from '../Button';
 const Secrets = () => (
   <div className={styles.sectionSecrets}>
     <div className={styles.secretsContainer}>
-      <h2 className={styles.secretsHeader}>В чем секрет эффективности курса?</h2>
+      <h1 className={styles.secretsHeader}>В чем секрет эффективности курса?</h1>
       <div className={styles.secrets}>
         <div className={styles.secretsBlock}>
           <h1>1</h1>

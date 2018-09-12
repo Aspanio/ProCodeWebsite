@@ -46,7 +46,10 @@ class Education extends Component {
 }
 
 Education.propTypes = {
-  rawPlan: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)).isRequired,
+  rawPlan: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.string),
+    PropTypes.string,
+  ]))).isRequired,
 };
 
 export default Education;

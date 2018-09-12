@@ -11,17 +11,38 @@
             font-weight: 900;
             font-size: $hfontsize;
             text-transform: uppercase;
+            @media screen and (max-width: 600px) {
+                font-size: 24px;
+            }
         }
         .placesGallery{
             display: flex;
             justify-content: space-between;
             margin: 30px 0;
+            img {
+                max-width: 33%;
+                height: auto;
+                align-self: flex-start;
+            }
+            p {
+                max-width: 100;
+            }
         }
         .placeHeader {
-            display: flex;
+            display: flex;  
             align-items: center;
             justify-content: space-between;
             margin: 30px 0;
+            @media screen and (max-width: 600px) {
+                flex-direction: column;
+                justify-content: center;
+            }
+            img {
+                max-width: 90%;
+                @media screen and (max-width: 768px) {
+                    max-width: 70%;
+                }
+            }
             span {
                 color: $yellow;
                 font-size: 40px;

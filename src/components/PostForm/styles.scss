@@ -38,6 +38,9 @@
                         margin-left: 5px;
                         color: #fff;
                     }
+                    .inputException {
+                        cursor: pointer;
+                    }
                 }                
             }
         }
@@ -64,6 +67,7 @@
                 width: 100% ;
                 margin: 0 auto;
                 p { width: 90%;}
+                h1 { font-size: 24px; }
                 .formStyles {
                     input:not(.inputException) {
                         width: 90%;

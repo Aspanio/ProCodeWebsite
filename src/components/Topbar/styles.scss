@@ -8,6 +8,17 @@ nav {
         .logo {
             height: 21px;
             transform: translateY(90%);
+            @media screen and (max-width: 320px) {
+                width: 120px;
+                height: 18px;
+                transform: translateY(80%);
+            }
+        }
+        h3 {
+            font-family: sans-serif;
+            @media screen and (max-width: 320px) {
+                font-size: 16px;
+            }
         }
     }
 }

@@ -8,10 +8,7 @@ const Header = () => (
     <div className={styles.headerContainer}>
       <div className={styles.mainContent}>
         <h1>pro<span>code</span> frontend <span>+</span> backend <span className={styles.span}>courses</span></h1>
-        <p>Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Harum soluta eaque
-        assumenda architecto rerum?
-        </p>
+        <p>Практический курс программирования с нуля до продвинутого, путь к будущей профессии</p>
         <Button />
       </div>
     </div>
