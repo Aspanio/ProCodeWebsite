@@ -19,8 +19,8 @@ class Place extends Component {
     const { square } = this.props;
     const item = placeImgs.map(el => <img key={el} src={el} alt="" />);
     return (
-      <div className={styles.placeBg}>
-        <div className={styles.placeContainer}>
+      <div className={styles.bg}>
+        <div className={styles.container}>
           <h1>где проходит обучение</h1>
           <div className={styles.placeHeader}>
             <img src={placeImg} alt="План здания" />

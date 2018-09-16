@@ -1,9 +1,9 @@
 @import '../../variables';
-.priceBoardBg {
+.bg {
     background-color: $bgc;
     font-family: sans-serif;
     padding-bottom: 70px;
-    .priceBoardContainer {
+    .container {
         max-width: 1190px;
         padding: 0 20px;
         margin: 0 auto;
@@ -21,22 +21,7 @@
         .cards {
             display: flex;
             justify-content: space-between;
-            .card {
-                flex: 1;
-                margin-right: 40px;
-                width: 100%;
-            }
-            .card:last-child{
-                margin-right: 0;
-            }
-        }
-
-    }
-}
-@media screen and (max-width: 992px) {
-    .priceBoardBg {
-        .priceBoardContainer {
-            .cards {
+            @media screen and (max-width: 992px) {
                 display: flex;
                 justify-content: space-between;
                 flex-direction: column;
@@ -48,7 +33,15 @@
                     margin-bottom: 0;
                 }
             }
-    
+            .card {
+                flex: 1;
+                margin-right: 40px;
+                width: 100%;
+            }
+            .card:last-child{
+                margin-right: 0;
+            }
         }
+
     }
 }

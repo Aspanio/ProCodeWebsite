@@ -1,7 +1,7 @@
 @import '../../variables';
-.specialOfferBg {
+.bg {
     background-color: $bgc;
-    .specialOfferContainer {
+    .container {
         max-width: 1190px;
         margin: 0 auto;
         padding: 0 20px;
@@ -14,12 +14,12 @@
                 flex-wrap: wrap;
                 margin-bottom: 30px;
                 margin-left: 0;
+                @media screen and (max-width: 321px) {padding-left: 15px;}
                 li {
                     width: 45%;
                     margin: 10px 0 10px 10px;
                     font-family: sans-serif;
                 }
-                
             }
             h1 {
                 color: #000;
@@ -27,12 +27,8 @@
                 margin: 0;
                 font-weight: 900;
                 text-transform: uppercase;
-                @media screen and (max-width: 600px) {
-                    font-size: 24px;
-                }
-                @media screen and (max-width: 321px) {
-                    font-size: 20px;
-                }
+                @media screen and (max-width: 600px) { font-size: 24px;}
+                @media screen and (max-width: 321px) {font-size: 20px;}
             }
             p {
                 margin: 0;
@@ -91,8 +87,8 @@
 }
 
 @media screen and (max-width: 992px) {
-    .specialOfferBg {
-        .specialOfferContainer {
+    .bg {
+        .container {
             min-width: 200px;
             .specialOffer {
                 display: flex;
@@ -114,25 +110,10 @@
                         margin: 10px 0 30px;
                     }
                     .counter {
-                        h3{
-                            align-self: center;
-                            *{
-                                color: #000;
-                                *{
-                                    color: #000;
-                                }
-                            }
-                        }
+                        align-items: center;
                     }
                 }
             }
-        }
-    }
-}
-@media screen and (max-width: 320px) {
-    .specialOfferBg {
-        ul {
-            padding-left: 15px;
         }
     }
 }

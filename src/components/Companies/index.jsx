@@ -26,12 +26,10 @@ class Companies extends Component {
     const { companies } = this.props;
     const items = companies.map(el => <img key={uuidv4()} src={el} alt="#" />);
     return (
-      <div className={styles.compBg}>
-        <div className={styles.compContainer}>
-          <h1>компании в которых работают наши выпускники</h1>
-          <div className={styles.companies}>{items}</div>
-          <Button />
-        </div>
+      <div className={styles.container}>
+        <h1>компании в которых работают наши выпускники</h1>
+        <div className={styles.companies}>{items}</div>
+        <Button />
       </div>
     );
   }

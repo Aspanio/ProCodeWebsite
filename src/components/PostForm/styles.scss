@@ -1,16 +1,23 @@
 @import '../../variables';
-.bgImage {
+.bg {
     background-image: url('./imgs/bg.png');
     background-size: cover;
     background-repeat: no-repeat;
-    .formContainer {
+    .container {
         max-width: 1190px;
         padding: 0 20px;
         margin: 0 auto;
         .formDivision {
             padding: 50px 0;
             color: #fff;
-            width: 50% ;
+            width: 50%;
+            @media screen and (max-width: 992px) { width: 70%; }
+            @media screen and (max-width: 600px) {
+                width: 100% ;
+                margin: 0 auto;
+                p { width: 90%;}
+                h1 { font-size: 24px; }
+            }
             h1 {
                 margin: 0;
                 font-size: $hfontsize;
@@ -29,6 +36,9 @@
                     height: 40px;
                     border-radius: 10px;
                     border: none;
+                    @media screen and (max-width: 992px) { width: 100%; }
+                    @media screen and (max-width: 600px) { width: 90%; }
+                    
                 }
                 .checkboxStyles {
                     margin: 7px 0;
@@ -42,37 +52,6 @@
                         cursor: pointer;
                     }
                 }                
-            }
-        }
-    }
-}
-@media screen and (max-width: 992px) {
-    .bgImage {
-        .formContainer {
-            .formDivision {
-                width: 70% ;
-                .formStyles {
-                    input:not(.inputException) {
-                        width: 100%;
-                    }             
-                }
-            }
-        }
-    }
-}
-@media screen and (max-width: 600px) {
-    .bgImage {
-        .formContainer {
-            .formDivision {
-                width: 100% ;
-                margin: 0 auto;
-                p { width: 90%;}
-                h1 { font-size: 24px; }
-                .formStyles {
-                    input:not(.inputException) {
-                        width: 90%;
-                    }             
-                }
             }
         }
     }

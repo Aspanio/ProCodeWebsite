@@ -48,8 +48,8 @@ class PostForm extends Component {
     const { para } = this.props;
     const { header } = this.props;
     return (
-      <div className={styles.bgImage}>
-        <div className={styles.formContainer}>
+      <div className={styles.bg}>
+        <div className={styles.container}>
           <div className={styles.formDivision}>
             <h1>{header}</h1>
             <p>{para}</p>

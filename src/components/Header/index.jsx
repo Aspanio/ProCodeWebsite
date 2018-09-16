@@ -4,10 +4,10 @@ import Button from '../Button';
 
 
 const Header = () => (
-  <div className={styles.headerBg}>
-    <div className={styles.headerContainer}>
+  <div className={styles.bg}>
+    <div className={styles.container}>
       <div className={styles.mainContent}>
-        <h1>pro<span>code</span> frontend <span>+</span> backend <span className={styles.span}>courses</span></h1>
+        <h1>pro<span>code</span> frontend <span>+</span> backend <span className={styles.lightWeight}>courses</span></h1>
         <p>Практический курс программирования с нуля до продвинутого, путь к будущей профессии</p>
         <Button />
       </div>

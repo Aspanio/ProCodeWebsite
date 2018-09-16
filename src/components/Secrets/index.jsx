@@ -3,8 +3,8 @@ import styles from './styles.scss';
 import Button from '../Button';
 
 const Secrets = () => (
-  <div className={styles.sectionSecrets}>
-    <div className={styles.secretsContainer}>
+  <div className={styles.bg}>
+    <div className={styles.container}>
       <h1 className={styles.secretsHeader}>В чем секрет эффективности курса?</h1>
       <div className={styles.secrets}>
         <div className={styles.secretsBlock}>

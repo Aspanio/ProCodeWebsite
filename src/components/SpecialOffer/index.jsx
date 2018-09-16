@@ -29,8 +29,8 @@ class SpecialOffer extends Component {
     const { display } = this.state;
     const item = items.map(el => <li key={el}>{el}</li>);
     return (
-      <div style={{ display }} className={styles.specialOfferBg}>
-        <div className={styles.specialOfferContainer}>
+      <div style={{ display }} className={styles.bg}>
+        <div className={styles.container}>
           <div className={styles.specialOffer}>
             <h1>Специальный курс с <span>трудоустройством</span></h1>
             <div className={styles.specialPrices}>

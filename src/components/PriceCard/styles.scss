@@ -32,10 +32,7 @@
         font-size: $hfontsize;
         margin-bottom: 10px;
     }
-    h4 {
-        margin-bottom: 20px;
-    }
-    li {
-        padding: 7px 0;
-    }
+    h4 { margin-bottom: 20px; }
+    li { padding: 7px 0; }
+    span { color: $yellow; }
 }

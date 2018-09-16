@@ -3,8 +3,8 @@ import styles from './styles.scss';
 import PriceCard from '../PriceCard';
 
 const PriceBoard = () => (
-  <div className={styles.priceBoardBg}>
-    <div className={styles.priceBoardContainer}>
+  <div className={styles.bg}>
+    <div className={styles.container}>
       <h1>выберите подходящий тариф обучения</h1>
       <div className={styles.cards}>
         <div className={styles.card}>

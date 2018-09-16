@@ -8,7 +8,7 @@ import icon4 from './imgs/icon4.png';
 
 
 const Features = () => (
-  <div className={styles.featuresContainer}>
+  <div className={styles.container}>
     <div className={styles.features}>
       <img src={icon1} alt="Картинка" />
       <h3>ДЛЯ ЛЮБОГО УРОВНЯ</h3>

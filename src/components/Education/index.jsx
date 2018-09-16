@@ -25,21 +25,19 @@ class Education extends Component {
     });
 
     return (
-      <div className={styles.edBg}>
-        <div className={styles.edCon}>
-          <h1>структура обучения</h1>
-          <div className={styles.edMain}>
-            <div className={styles.midBar}>
-              <div className={styles.leftBar}>
-                <p>7-11 месяцев</p>
-              </div>
-            </div>
-            <div className={styles.rightBar}>
-              {plan}
+      <div className={styles.container}>
+        <h1>структура обучения</h1>
+        <div className={styles.desc}>
+          <div className={styles.midBar}>
+            <div className={styles.leftBar}>
+              <p>7-11 месяцев</p>
             </div>
           </div>
-          <Button />
+          <div className={styles.rightBar}>
+            {plan}
+          </div>
         </div>
+        <Button />
       </div>
     );
   }
