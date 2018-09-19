@@ -17,7 +17,7 @@ class Topbar extends Component {
       <nav style={{ backgroundColor: '#fff' }}>
         <div className={styles.container}>
           <img src={logo} alt="PROCODE" className={styles.logo} />
-          <a href={anchorNumber} /><h3>{number}</h3>
+          <a href={anchorNumber}><h3>{number}</h3></a>
         </div>
       </nav>
     );
